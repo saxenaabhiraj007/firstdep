@@ -15,7 +15,7 @@ const App: React.FC = () => {
       <div className="w-full max-w-lg z-10 transition-all duration-700 ease-in-out">
         {!isAccepted ? (
           <InvitationCard 
-            name="Anushka" 
+            name="Gullu" 
             onAccept={() => setIsAccepted(true)} 
           />
         ) : (

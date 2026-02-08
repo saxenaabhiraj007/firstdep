@@ -12,7 +12,7 @@ const SuccessCard: React.FC = () => {
       const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
       const response = await ai.models.generateContent({
         model: 'gemini-3-flash-preview',
-        contents: "Write a very short, cute, 2-line Valentine's poem for a girl named Anushka who just said 'Yes' to being a Valentine. Keep it sweet and romantic.",
+        contents: "Write a very short, cute, 2-line Valentine's poem for a girl named Gullu who just said 'Yes' to being a Valentine. Keep it sweet and romantic.",
       });
       if (response.text) {
         setPoem(response.text.trim());
@@ -35,7 +35,7 @@ const SuccessCard: React.FC = () => {
           Good job!
         </h2>
         <p className="text-pink-600 font-bold italic text-lg md:text-xl tracking-wide">
-          Anushka, you made the perfect choice! ❤️
+          Gullu, you made the perfect choice! ❤️
         </p>
       </div>
 
@@ -88,7 +88,7 @@ const SuccessCard: React.FC = () => {
         {loadingPoem && (
           <div className="flex items-center gap-2 text-pink-500 font-bold animate-pulse text-lg">
             <span>✨</span>
-            <span>Writing a special poem for Anushka...</span>
+            <span>Writing a special poem for Gullu...</span>
           </div>
         )}
         
